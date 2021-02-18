@@ -4,7 +4,7 @@ import Todo from './Todo'
 
 
 function TodoList() {
-    const [ todos, setTodos ] = useState('')
+    const [ todos, setTodos ] = useState([])
 
     const addTodo = (todo) => {
         //when you make a space it will save it will be saved that way
@@ -31,7 +31,10 @@ function TodoList() {
         <div>
             <h1>What's the plan for today</h1>
             <TodoFrom onSubmit={addTodo} />
-            <Todo todos={todos} completeTodo={completeTodo} />
+            <Todo 
+            todos={todos} 
+            completeTodo={completeTodo} 
+            />
         </div>
     )
 }
