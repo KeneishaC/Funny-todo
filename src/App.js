@@ -1,10 +1,14 @@
 import React from 'react'
+
 import './App.css';
+
+import TodoList from './Components/TodoList'
+
 
 function App() {
   return (
     <div className="funny-todos">
-      <h1> Funny Todos</h1>
+      <TodoList />
     </div>
   );
 }

@@ -10,11 +10,12 @@ function TodoForm( props) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        props.onsubmit({
+        props.onSubmit({
             //making the chances of getting the same id unlikely
             id: Math.floor(Math.random() * 1000),
             text: input 
         })
+        setInput('')
     }
 
     return (
