@@ -50,7 +50,7 @@ function TodoList() {
             todos={todos} 
             completeTodo={completeTodo}
             removeTodo={removeTodo}
-            
+            updateTodo={updateTodo}
             />
         </div>
     )
